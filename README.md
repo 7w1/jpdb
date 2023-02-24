@@ -6,40 +6,38 @@
 </h3>
 
 <p align="center">
-	<a href="https://github.com/catppuccin/jpdb/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/jpdb?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-	<a href="https://github.com/catppuccin/jpdb/issues"><img src="https://img.shields.io/github/issues/catppuccin/jpdb?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-	<a href="https://github.com/catppuccin/jpdb/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/jpdb.io?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+	<a href="https://github.com/7w1/jpdb/stargazers"><img src="https://img.shields.io/github/stars/7w1/jpdb?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+	<a href="https://github.com/7w1/jpdb/issues"><img src="https://img.shields.io/github/issues/7w1/jpdb?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+	<a href="https://github.com/7w1/jpdb/contributors"><img src="https://img.shields.io/github/contributors/7w1/jpdb.io?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 <p align="center">
-	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/preview.webp"/>
+	<img src="https://raw.githubusercontent.com/7w1/jpdb/main/assets/res.webp"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/latte.webp"/>
+<img src="https://raw.githubusercontent.com/7w1/jpdb/main/assets/latte.png"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/frappe.webp"/>
+<img src="https://raw.githubusercontent.com/7w1/jpdb/main/assets/frappe.png"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/macchiato.webp"/>
+<img src="https://raw.githubusercontent.com/7w1/jpdb/main/assets/macchiato.png"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/mocha.webp"/>
+<img src="https://raw.githubusercontent.com/7w1/jpdb/main/assets/mocha.png"/>
 </details>
 
 ## Usage
 
-1. Clone this repository locally
-2. Open the app's settings
-3. Select `import theme` and browse to where you cloned Catppuccin
-4. Select it
+1. Install Stylus for your browser. <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en">Chrome</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/styl-us/">Firefox</a>, <a href="https://addons.opera.com/en/extensions/details/stylus/">Opera</a>.
+2. Install <a href="https://github.com/7w1/jpdb/raw/main/catppuccin.user.css">this</a> theme and select your palette.
 
 ## 💝 Thanks to
 
