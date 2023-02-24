@@ -1,0 +1,630 @@
+/* ==UserStyle==
+@name           jpdb Catppuccin
+@namespace      github.com/catppuccin/jpdb
+@homepageURL    https://github.com/catppuccin/jpdb
+@version        1.0.0
+@description    Soothing pastel theme for jpdb
+@author         Catppuccin - 7w1
+@preprocessor   stylus
+@updateURL      https://github.com/catppuccin/jpdb/raw/main/catppuccin.user.css
+
+@var select theme "Theme" ["Frappe", "Macchiato", "Mocha", "Latte"]
+==/UserStyle== */
+@-moz-document domain("jpdb.io") {
+    if (theme=="Latte") {
+        .sn-bg {
+            fill: #1e66f5;
+        }
+
+        html.dark-mode {
+            --text-color: #4c4f69;
+            --text-strong-color: #7287fd;
+            --background-color: #eff1f5;
+            --deeper-background-color: #e6e9ef;
+            --part-of-speech-color: #6c6f85;
+            --part-of-speech-comma-color: #5c5f77;
+            --link-underline-color: #7287fd;
+            --link-color: #1e66f5;
+            --highlight-color: #9ca0b0;
+            --english-translation-color: #4c4f69;
+            --kanji-keyword-missing-color: #e64553;
+            --unfocused-arrow-color: #bcc0cc;
+            --footer-color: #bcc0cc;
+            --checkbox-border-color: #bcc0cc;
+            --checkbox-focused-border-color: #209fb5;
+            --checkbox-background-color: #e6e9ef;
+            --checkbox-box-shadow-color: #dce0e8;
+            --checkbox-focused-box-shadow-color: #209fb5;
+            --checkbox-border-size: 2px;
+            --button-background-color: #e6e9ef;
+            --button-text-color: #4c4f69;
+            --button-shadow-color: #dce0e8;
+            --button-focused-shadow-color: transparent;
+            --button-hover-shadow-color: transparent;
+            --outline-input-color: #04a5e5;
+            --outline-input-background-color-review: #e6e9ef;
+            --outline-input-background-color: #dce0e8;
+            --outline-v1-color: #04a5e5;
+            --deck-index-color: #acb0be;
+            --answer-box-color: #bcc0cc;
+            --table-border-color: #acb0be;
+            --spelling-box-background-color: #ccd0da;
+            --spelling-box-text-color: #4c4f69;
+            --input-text-color: #4c4f69;
+            --input-border-color: #bcc0cc;
+            --input-background-color: #e6e9ef;
+            --input-box-shadow-color: #dce0e8;
+            --input-focused-box-shadow-color: transparent;
+            --resize-handle-color: #acb0be;
+            --scrollbar-color: #209fb5;
+            --scrollbar-background-color: #dce0e8;
+            --visible-hr-background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0));
+            --burger-color: #acb0be;
+            --mnemonic-main: #acb0be;
+            --mnemonic-component: #ccd0da;
+            --background-button-color: #bcc0cc;
+            --background-button-border-color: #ccd0da;
+            --big-shadow-border: #bcc0cc;
+            --big-shadow-color: #e6e9ef;
+            --kanji-fill-color: #acb0be;
+            --kanji-stroke-color: #e6e9ef;
+            --progress-bar-background: #bcc0cc;
+            --progress-bar-foreground: linear-gradient(#1e66f5, #209fb5);
+            --progress-bar-in-progress: #df8e1d;
+            --progress-bar-text-shadow: #acb0be;
+            --progress-bar-target-coverage: #e6e9ef;
+            --review-button-group-shadow: #e6e9ef;
+            --review-button-group-border: #bcc0cc;
+        }
+        :root {
+            --text-color: #4c4f69;
+            --text-strong-color: #7287fd;
+            --background-color: #eff1f5;
+            --deeper-background-color: #e6e9ef;
+            --part-of-speech-color: #6c6f85;
+            --part-of-speech-comma-color: #5c5f77;
+            --link-underline-color: #7287fd;
+            --link-color: #1e66f5;
+            --highlight-color: #9ca0b0;
+            --english-translation-color: #4c4f69;
+            --kanji-keyword-missing-color: #e64553;
+            --unfocused-arrow-color: #bcc0cc;
+            --footer-color: #bcc0cc;
+            --checkbox-border-color: #bcc0cc;
+            --checkbox-focused-border-color: #209fb5;
+            --checkbox-background-color: #e6e9ef;
+            --checkbox-box-shadow-color: #dce0e8;
+            --checkbox-focused-box-shadow-color: #209fb5;
+            --checkbox-border-size: 2px;
+            --button-background-color: #e6e9ef;
+            --button-text-color: #4c4f69;
+            --button-shadow-color: #dce0e8;
+            --button-focused-shadow-color: transparent;
+            --button-hover-shadow-color: transparent;
+            --outline-input-color: #04a5e5;
+            --outline-input-background-color-review: #e6e9ef;
+            --outline-input-background-color: #dce0e8;
+            --outline-v1-color: #04a5e5;
+            --deck-index-color: #acb0be;
+            --answer-box-color: #bcc0cc;
+            --table-border-color: #acb0be;
+            --spelling-box-background-color: #ccd0da;
+            --spelling-box-text-color: #4c4f69;
+            --input-text-color: #4c4f69;
+            --input-border-color: #bcc0cc;
+            --input-box-shadow-color: #dce0e8;
+            --input-focused-box-shadow-color: transparent;
+            --resize-handle-color: #acb0be;
+            --scrollbar-color: #209fb5;
+            --scrollbar-background-color: #dce0e8;
+            --visible-hr-background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0));
+            --burger-color: #acb0be;
+            --mnemonic-main: #acb0be;
+            --mnemonic-component: #ccd0da;
+            --background-button-color: #bcc0cc;
+            --background-button-border-color: #ccd0da;
+            --big-shadow-border: #bcc0cc;
+            --big-shadow-color: #e6e9ef;
+            --kanji-fill-color: #acb0be;
+            --kanji-stroke-color: #e6e9ef;
+            --progress-bar-background: #bcc0cc;
+            --progress-bar-foreground: linear-gradient(#1e66f5, #209fb5);
+            --progress-bar-in-progress: #df8e1d;
+            --progress-bar-text-shadow: #acb0be;
+            --progress-bar-target-coverage: #e6e9ef;
+            --review-button-group-shadow: #e6e9ef;
+            --review-button-group-border: #bcc0cc;
+
+            --focused-arrow-color: #1e66f5;
+            --what-is-this-color: #7287fd;
+            --what-is-this-focus-color: #1e66f5;
+            --what-is-this-focus-shadow-color: #209fb5;
+
+            --checkbox-color: #1e66f5;
+            --checkbox-focused-text-underline-color: #7287fd;
+
+            --button-focused-border-color: #1e66f5;
+            --button-hover-border-color: #1e66f5;
+            --outline-input-shadow-color: #209fb5;
+            --outline-v1-color: #d20f39;
+            --outline-v2-color: #5c5f77;
+            --outline-v4-color: #40a02b;
+            --subsection-label-color: #acb0be;
+            --table-header-color: #acb0be;
+            --input-background-color: #ccd0da;
+            --input-focused-border-color: #bcc0cc;
+            --property-text-color: #acb0be;
+            --state-new: #209fb5;
+            --state-blacklisted: #acb0be;
+            --state-known: #40a02b;
+            --state-overdue: #e64553;
+            --state-failed: #d20f39;
+            --pitch-high-s: rgb(210, 15, 57);
+            --pitch-high-e: rgba(231, 130, 132, 0);
+            --pitch-low-s: rgb(30, 102, 245);
+            --pitch-low-e: rgba(140, 170, 238, 0);
+        }
+    }
+    else if (theme=="Frappe") {
+        .sn-bg {
+            fill: #8caaee;
+        }
+
+        html.dark-mode {
+            --text-color: #c6d0f5;
+            --text-strong-color: #babbf1;
+            --background-color: #303446;
+            --deeper-background-color: #292c3c;
+            --part-of-speech-color: #a5adce;
+            --part-of-speech-comma-color: #b5bfe2;
+            --link-underline-color: #babbf1;
+            --link-color: #8caaee;
+            --highlight-color: #737994;
+            --english-translation-color: #c6d0f5;
+            --kanji-keyword-missing-color: #ea999c;
+            --unfocused-arrow-color: #51576d;
+            --footer-color: #51576d;
+            --checkbox-border-color: #51576d;
+            --checkbox-focused-border-color: #85c1dc;
+            --checkbox-background-color: #292c3c;
+            --checkbox-box-shadow-color: #232634;
+            --checkbox-focused-box-shadow-color: #85c1dc;
+            --checkbox-border-size: 2px;
+            --button-background-color: #292c3c;
+            --button-text-color: #c6d0f5;
+            --button-shadow-color: #232634;
+            --button-focused-shadow-color: transparent;
+            --button-hover-shadow-color: transparent;
+            --outline-input-color: #99d1db;
+            --outline-input-background-color-review: #292c3c;
+            --outline-input-background-color: #232634;
+            --outline-v1-color: #99d1db;
+            --deck-index-color: #626880;
+            --answer-box-color: #51576d;
+            --table-border-color: #626880;
+            --spelling-box-background-color: #414559;
+            --spelling-box-text-color: #c6d0f5;
+            --input-text-color: #c6d0f5;
+            --input-border-color: #51576d;
+            --input-background-color: #292c3c;
+            --input-box-shadow-color: #232634;
+            --input-focused-box-shadow-color: transparent;
+            --resize-handle-color: #626880;
+            --scrollbar-color: #85c1dc;
+            --scrollbar-background-color: #232634;
+            --visible-hr-background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0));
+            --burger-color: #626880;
+            --mnemonic-main: #626880;
+            --mnemonic-component: #414559;
+            --background-button-color: #51576d;
+            --background-button-border-color: #414559;
+            --big-shadow-border: #51576d;
+            --big-shadow-color: #292c3c;
+            --kanji-fill-color: #626880;
+            --kanji-stroke-color: #292c3c;
+            --progress-bar-background: #51576d;
+            --progress-bar-foreground: linear-gradient(#8caaee, #85c1dc);
+            --progress-bar-in-progress: #e5c890;
+            --progress-bar-text-shadow: #626880;
+            --progress-bar-target-coverage: #292c3c;
+            --review-button-group-shadow: #292c3c;
+            --review-button-group-border: #51576d;
+        }
+        :root {
+            --text-color: #c6d0f5;
+            --text-strong-color: #babbf1;
+            --background-color: #303446;
+            --deeper-background-color: #292c3c;
+            --part-of-speech-color: #a5adce;
+            --part-of-speech-comma-color: #b5bfe2;
+            --link-underline-color: #babbf1;
+            --link-color: #8caaee;
+            --highlight-color: #737994;
+            --english-translation-color: #c6d0f5;
+            --kanji-keyword-missing-color: #ea999c;
+            --unfocused-arrow-color: #51576d;
+            --footer-color: #51576d;
+            --checkbox-border-color: #51576d;
+            --checkbox-focused-border-color: #85c1dc;
+            --checkbox-background-color: #292c3c;
+            --checkbox-box-shadow-color: #232634;
+            --checkbox-focused-box-shadow-color: #85c1dc;
+            --checkbox-border-size: 2px;
+            --button-background-color: #292c3c;
+            --button-text-color: #c6d0f5;
+            --button-shadow-color: #232634;
+            --button-focused-shadow-color: transparent;
+            --button-hover-shadow-color: transparent;
+            --outline-input-color: #99d1db;
+            --outline-input-background-color-review: #292c3c;
+            --outline-input-background-color: #232634;
+            --outline-v1-color: #99d1db;
+            --deck-index-color: #626880;
+            --answer-box-color: #51576d;
+            --table-border-color: #626880;
+            --spelling-box-background-color: #414559;
+            --spelling-box-text-color: #c6d0f5;
+            --input-text-color: #c6d0f5;
+            --input-border-color: #51576d;
+            --input-box-shadow-color: #232634;
+            --input-focused-box-shadow-color: transparent;
+            --resize-handle-color: #626880;
+            --scrollbar-color: #85c1dc;
+            --scrollbar-background-color: #232634;
+            --visible-hr-background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0));
+            --burger-color: #626880;
+            --mnemonic-main: #626880;
+            --mnemonic-component: #414559;
+            --background-button-color: #51576d;
+            --background-button-border-color: #414559;
+            --big-shadow-border: #51576d;
+            --big-shadow-color: #292c3c;
+            --kanji-fill-color: #626880;
+            --kanji-stroke-color: #292c3c;
+            --progress-bar-background: #51576d;
+            --progress-bar-foreground: linear-gradient(#8caaee, #85c1dc);
+            --progress-bar-in-progress: #e5c890;
+            --progress-bar-text-shadow: #626880;
+            --progress-bar-target-coverage: #292c3c;
+            --review-button-group-shadow: #292c3c;
+            --review-button-group-border: #51576d;
+
+            --focused-arrow-color: #8caaee;
+            --what-is-this-color: #babbf1;
+            --what-is-this-focus-color: #8caaee;
+            --what-is-this-focus-shadow-color: #85c1dc;
+
+            --checkbox-color: #8caaee;
+            --checkbox-focused-text-underline-color: #babbf1;
+
+            --button-focused-border-color: #8caaee;
+            --button-hover-border-color: #8caaee;
+            --outline-input-shadow-color: #85c1dc;
+            --outline-v1-color: #e78284;
+            --outline-v2-color: #b5bfe2;
+            --outline-v4-color: #a6d189;
+            --subsection-label-color: #626880;
+            --table-header-color: #626880;
+            --input-background-color: #414559;
+            --input-focused-border-color: #51576d;
+            --property-text-color: #626880;
+            --state-new: #85c1dc;
+            --state-blacklisted: #626880;
+            --state-known: #a6d189;
+            --state-overdue: #ea999c;
+            --state-failed: #e78284;
+            --pitch-high-s: rgb(231, 130, 132);
+            --pitch-high-e: rgba(231, 130, 132, 0);
+            --pitch-low-s: rgb(140, 170, 238);
+            --pitch-low-e: rgba(140, 170, 238, 0);
+        }
+    }
+    else if (theme=="Macchiato") {
+        .sn-bg {
+            fill: #8aadf4;
+        }
+
+        html.dark-mode {
+            --text-color: #cad3f5;
+            --text-strong-color: #b7bdf8;
+            --background-color: #24273a;
+            --deeper-background-color: #1e2030;
+            --part-of-speech-color: #a5adcb;
+            --part-of-speech-comma-color: #b8c0e0;
+            --link-underline-color: #b7bdf8;
+            --link-color: #8aadf4;
+            --highlight-color: #6e738d;
+            --english-translation-color: #cad3f5;
+            --kanji-keyword-missing-color: #ee99a0;
+            --unfocused-arrow-color: #494d64;
+            --footer-color: #494d64;
+            --checkbox-border-color: #494d64;
+            --checkbox-focused-border-color: #7dc4e4;
+            --checkbox-background-color: #1e2030;
+            --checkbox-box-shadow-color: #181926;
+            --checkbox-focused-box-shadow-color: #7dc4e4;
+            --checkbox-border-size: 2px;
+            --button-background-color: #1e2030;
+            --button-text-color: #cad3f5;
+            --button-shadow-color: #181926;
+            --button-focused-shadow-color: transparent;
+            --button-hover-shadow-color: transparent;
+            --outline-input-color: #91d7e3;
+            --outline-input-background-color-review: #1e2030;
+            --outline-input-background-color: #181926;
+            --outline-v1-color: #91d7e3;
+            --deck-index-color: #5b6078;
+            --answer-box-color: #494d64;
+            --table-border-color: #5b6078;
+            --spelling-box-background-color: #363a4f;
+            --spelling-box-text-color: #cad3f5;
+            --input-text-color: #cad3f5;
+            --input-border-color: #494d64;
+            --input-background-color: #1e2030;
+            --input-box-shadow-color: #181926;
+            --input-focused-box-shadow-color: transparent;
+            --resize-handle-color: #5b6078;
+            --scrollbar-color: #7dc4e4;
+            --scrollbar-background-color: #181926;
+            --visible-hr-background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0));
+            --burger-color: #5b6078;
+            --mnemonic-main: #5b6078;
+            --mnemonic-component: #363a4f;
+            --background-button-color: #494d64;
+            --background-button-border-color: #363a4f;
+            --big-shadow-border: #494d64;
+            --big-shadow-color: #1e2030;
+            --kanji-fill-color: #5b6078;
+            --kanji-stroke-color: #1e2030;
+            --progress-bar-background: #494d64;
+            --progress-bar-foreground: linear-gradient(#8aadf4, #7dc4e4);
+            --progress-bar-in-progress: #eed49f;
+            --progress-bar-text-shadow: #5b6078;
+            --progress-bar-target-coverage: #1e2030;
+            --review-button-group-shadow: #1e2030;
+            --review-button-group-border: #494d64;
+        }
+        :root {
+            --text-color: #cad3f5;
+            --text-strong-color: #b7bdf8;
+            --background-color: #24273a;
+            --deeper-background-color: #1e2030;
+            --part-of-speech-color: #a5adcb;
+            --part-of-speech-comma-color: #b8c0e0;
+            --link-underline-color: #b7bdf8;
+            --link-color: #8aadf4;
+            --highlight-color: #6e738d;
+            --english-translation-color: #cad3f5;
+            --kanji-keyword-missing-color: #ee99a0;
+            --unfocused-arrow-color: #494d64;
+            --footer-color: #494d64;
+            --checkbox-border-color: #494d64;
+            --checkbox-focused-border-color: #7dc4e4;
+            --checkbox-background-color: #1e2030;
+            --checkbox-box-shadow-color: #181926;
+            --checkbox-focused-box-shadow-color: #7dc4e4;
+            --checkbox-border-size: 2px;
+            --button-background-color: #1e2030;
+            --button-text-color: #cad3f5;
+            --button-shadow-color: #181926;
+            --button-focused-shadow-color: transparent;
+            --button-hover-shadow-color: transparent;
+            --outline-input-color: #91d7e3;
+            --outline-input-background-color-review: #1e2030;
+            --outline-input-background-color: #181926;
+            --outline-v1-color: #91d7e3;
+            --deck-index-color: #5b6078;
+            --answer-box-color: #494d64;
+            --table-border-color: #5b6078;
+            --spelling-box-background-color: #363a4f;
+            --spelling-box-text-color: #cad3f5;
+            --input-text-color: #cad3f5;
+            --input-border-color: #494d64;
+            --input-box-shadow-color: #181926;
+            --input-focused-box-shadow-color: transparent;
+            --resize-handle-color: #5b6078;
+            --scrollbar-color: #7dc4e4;
+            --scrollbar-background-color: #181926;
+            --visible-hr-background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0));
+            --burger-color: #5b6078;
+            --mnemonic-main: #5b6078;
+            --mnemonic-component: #363a4f;
+            --background-button-color: #494d64;
+            --background-button-border-color: #363a4f;
+            --big-shadow-border: #494d64;
+            --big-shadow-color: #1e2030;
+            --kanji-fill-color: #5b6078;
+            --kanji-stroke-color: #1e2030;
+            --progress-bar-background: #494d64;
+            --progress-bar-foreground: linear-gradient(#8aadf4, #7dc4e4);
+            --progress-bar-in-progress: #eed49f;
+            --progress-bar-text-shadow: #5b6078;
+            --progress-bar-target-coverage: #1e2030;
+            --review-button-group-shadow: #1e2030;
+            --review-button-group-border: #494d64;
+
+            --focused-arrow-color: #8aadf4;
+            --what-is-this-color: #b7bdf8;
+            --what-is-this-focus-color: #8aadf4;
+            --what-is-this-focus-shadow-color: #7dc4e4;
+
+            --checkbox-color: #8aadf4;
+            --checkbox-focused-text-underline-color: #b7bdf8;
+
+            --button-focused-border-color: #8aadf4;
+            --button-hover-border-color: #8aadf4;
+            --outline-input-shadow-color: #7dc4e4;
+            --outline-v1-color: #ed8796;
+            --outline-v2-color: #b8c0e0;
+            --outline-v4-color: #a6da95;
+            --subsection-label-color: #5b6078;
+            --table-header-color: #5b6078;
+            --input-background-color: #363a4f;
+            --input-focused-border-color: #494d64;
+            --property-text-color: #5b6078;
+            --state-new: #7dc4e4;
+            --state-blacklisted: #5b6078;
+            --state-known: #a6da95;
+            --state-overdue: #ee99a0;
+            --state-failed: #ed8796;
+            --pitch-high-s: rgb(237, 135, 150);
+            --pitch-high-e: rgba(231, 130, 132, 0);
+            --pitch-low-s: rgb(138, 173, 244);
+            --pitch-low-e: rgba(140, 170, 238, 0);
+        }
+    }
+    else if (theme=="Mocha") {
+        .sn-bg {
+            fill: #89b4fa;
+        }
+
+        html.dark-mode {
+            --text-color: #cdd6f4;
+            --text-strong-color: #b4befe;
+            --background-color: #1e1e2e;
+            --deeper-background-color: #181825;
+            --part-of-speech-color: #a6adc8;
+            --part-of-speech-comma-color: #bac2de;
+            --link-underline-color: #b4befe;
+            --link-color: #89b4fa;
+            --highlight-color: #6c7086;
+            --english-translation-color: #cdd6f4;
+            --kanji-keyword-missing-color: #eba0ac;
+            --unfocused-arrow-color: #45475a;
+            --footer-color: #45475a;
+            --checkbox-border-color: #45475a;
+            --checkbox-focused-border-color: #74c7ec;
+            --checkbox-background-color: #181825;
+            --checkbox-box-shadow-color: #11111b;
+            --checkbox-focused-box-shadow-color: #74c7ec;
+            --checkbox-border-size: 2px;
+            --button-background-color: #181825;
+            --button-text-color: #cdd6f4;
+            --button-shadow-color: #11111b;
+            --button-focused-shadow-color: transparent;
+            --button-hover-shadow-color: transparent;
+            --outline-input-color: #89dceb;
+            --outline-input-background-color-review: #181825;
+            --outline-input-background-color: #11111b;
+            --outline-v1-color: #89dceb;
+            --deck-index-color: #585b70;
+            --answer-box-color: #45475a;
+            --table-border-color: #585b70;
+            --spelling-box-background-color: #313244;
+            --spelling-box-text-color: #cdd6f4;
+            --input-text-color: #cdd6f4;
+            --input-border-color: #45475a;
+            --input-background-color: #181825;
+            --input-box-shadow-color: #11111b;
+            --input-focused-box-shadow-color: transparent;
+            --resize-handle-color: #585b70;
+            --scrollbar-color: #74c7ec;
+            --scrollbar-background-color: #11111b;
+            --visible-hr-background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0));
+            --burger-color: #585b70;
+            --mnemonic-main: #585b70;
+            --mnemonic-component: #313244;
+            --background-button-color: #45475a;
+            --background-button-border-color: #313244;
+            --big-shadow-border: #45475a;
+            --big-shadow-color: #181825;
+            --kanji-fill-color: #585b70;
+            --kanji-stroke-color: #181825;
+            --progress-bar-background: #45475a;
+            --progress-bar-foreground: linear-gradient(#89b4fa, #74c7ec);
+            --progress-bar-in-progress: #f9e2af;
+            --progress-bar-text-shadow: #585b70;
+            --progress-bar-target-coverage: #181825;
+            --review-button-group-shadow: #181825;
+            --review-button-group-border: #45475a;
+        }
+        :root {
+            --text-color: #cdd6f4;
+            --text-strong-color: #b4befe;
+            --background-color: #1e1e2e;
+            --deeper-background-color: #181825;
+            --part-of-speech-color: #a6adc8;
+            --part-of-speech-comma-color: #bac2de;
+            --link-underline-color: #b4befe;
+            --link-color: #89b4fa;
+            --highlight-color: #6c7086;
+            --english-translation-color: #cdd6f4;
+            --kanji-keyword-missing-color: #eba0ac;
+            --unfocused-arrow-color: #45475a;
+            --footer-color: #45475a;
+            --checkbox-border-color: #45475a;
+            --checkbox-focused-border-color: #74c7ec;
+            --checkbox-background-color: #181825;
+            --checkbox-box-shadow-color: #11111b;
+            --checkbox-focused-box-shadow-color: #74c7ec;
+            --checkbox-border-size: 2px;
+            --button-background-color: #181825;
+            --button-text-color: #cdd6f4;
+            --button-shadow-color: #11111b;
+            --button-focused-shadow-color: transparent;
+            --button-hover-shadow-color: transparent;
+            --outline-input-color: #89dceb;
+            --outline-input-background-color-review: #181825;
+            --outline-input-background-color: #11111b;
+            --outline-v1-color: #89dceb;
+            --deck-index-color: #585b70;
+            --answer-box-color: #45475a;
+            --table-border-color: #585b70;
+            --spelling-box-background-color: #313244;
+            --spelling-box-text-color: #cdd6f4;
+            --input-text-color: #cdd6f4;
+            --input-border-color: #45475a;
+            --input-box-shadow-color: #11111b;
+            --input-focused-box-shadow-color: transparent;
+            --resize-handle-color: #585b70;
+            --scrollbar-color: #74c7ec;
+            --scrollbar-background-color: #11111b;
+            --visible-hr-background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0));
+            --burger-color: #585b70;
+            --mnemonic-main: #585b70;
+            --mnemonic-component: #313244;
+            --background-button-color: #45475a;
+            --background-button-border-color: #313244;
+            --big-shadow-border: #45475a;
+            --big-shadow-color: #181825;
+            --kanji-fill-color: #585b70;
+            --kanji-stroke-color: #181825;
+            --progress-bar-background: #45475a;
+            --progress-bar-foreground: linear-gradient(#89b4fa, #74c7ec);
+            --progress-bar-in-progress: #f9e2af;
+            --progress-bar-text-shadow: #585b70;
+            --progress-bar-target-coverage: #181825;
+            --review-button-group-shadow: #181825;
+            --review-button-group-border: #45475a;
+
+            --focused-arrow-color: #89b4fa;
+            --what-is-this-color: #b4befe;
+            --what-is-this-focus-color: #89b4fa;
+            --what-is-this-focus-shadow-color: #74c7ec;
+
+            --checkbox-color: #89b4fa;
+            --checkbox-focused-text-underline-color: #b4befe;
+
+            --button-focused-border-color: #89b4fa;
+            --button-hover-border-color: #89b4fa;
+            --outline-input-shadow-color: #74c7ec;
+            --outline-v1-color: #f38ba8;
+            --outline-v2-color: #bac2de;
+            --outline-v4-color: #a6e3a1;
+            --subsection-label-color: #585b70;
+            --table-header-color: #585b70;
+            --input-background-color: #313244;
+            --input-focused-border-color: #45475a;
+            --property-text-color: #585b70;
+            --state-new: #74c7ec;
+            --state-blacklisted: #585b70;
+            --state-known: #a6e3a1;
+            --state-overdue: #eba0ac;
+            --state-failed: #f38ba8;
+            --pitch-high-s: rgb(243, 139, 168);
+            --pitch-high-e: rgba(231, 130, 132, 0);
+            --pitch-low-s: rgb(137, 180, 250);
+            --pitch-low-e: rgba(140, 170, 238, 0);
+        }
+    }
+}
